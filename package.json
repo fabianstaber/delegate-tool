@@ -1,0 +1,24 @@
+{
+  "name": "wca-regulations-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "parse-regs": "tsx scripts/parse-regs.ts",
+    "prebuild": "npm run parse-regs",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7",
+    "vue-tsc": "^3.3.11"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^6.0.8",
+    "vue": "^3.5.42"
+  }
+}
